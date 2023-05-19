@@ -1,10 +1,14 @@
-Xueanquan-tool是一个帮助用户根据需要开发出来的Python工具
+# Xueanquan-tool
+
+是一个帮助用户根据需要开发出来的Python工具
+
 它能够更加方便的帮助用户使用少量Python代码完成安全平台任务,但并不保证它能工作
+
 在多数情况下奏效
 
 ---
 
-# 使用案例
+## 使用案例
 
 修改`run.py`内容
 
@@ -21,7 +25,7 @@ finish_specials(get_specials(0, data=_data), _data)  # 获取所有活动列表�
 
 ---
 
-# 全部接口
+## 全部接口
 
 - `login()`：登录到该平台并获取用户数据
 - `finish_homework()`：完成作业任务
@@ -31,9 +35,11 @@ finish_specials(get_specials(0, data=_data), _data)  # 获取所有活动列表�
 - `get_homeworks()`：获取作业列表
 - `get_specials()`：获取专题列表
 
+详情看代码,我写的有点拉跨
+
 ---
 
-# 数据配置
+## 数据配置
 
 这是`config.py`中的代码
 
@@ -46,10 +52,11 @@ config = {
 }
 ```
 
-按需求修改
+按需求即可修改
+
 ---
 
-# 适配情况
+## 适配情况
 
 - [x] 获取"我的学习"列表
 - [x] 获取"所有活动"列表
