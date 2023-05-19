@@ -1,7 +1,12 @@
 URLS = {
     "login": "https://appapi.xueanquan.com/usercenter/api/v3/wx/login?checkShowQrCode=true&tmp=false",
     "sign": "https://huodongapi.xueanquan.com/p/guangdong/Topic/topic/platformapi/api/v1/records/sign",
+    "sign_hw": "https://yyapi.xueanquan.com/guangdong/api/v1/StudentHomeWork/HomeWorkSign",
+    "info_hw_2": "https://yyapi.xueanquan.com/guangdong/JiaTing/CommonHandler/info?api-version=1&contentId=0",
+    "info_hw": "https://yyapi.xueanquan.com/guangdong/api/v1/StudentHomeWork/GetSkillTestPaper?courseId=",
     "gather": "https://gather.xueanquan.com/",
+    "no_finish_homework_count":"https://yyapi.xueanquan.com/guangdong/api/v1/StudentHomeWork/NoFinishHomeWorkCount",
+    "homework_list":"https://yyapi.xueanquan.com/guangdong/safeapph5/api/v1/homework/homeworklist",
     "special": "https://file.xueanquan.com/webapi.guangdong/CourseAndSkill/NSpecialList.html",
     "need": "https://huodongapi.xueanquan.com/Topic/topic/main/api/v1/records/special-info?specialId=875&comeFrom=20232&countyId=120021012"
 }
@@ -15,6 +20,23 @@ PAYLOADS = {
     "sign": {
         "specialId": 0,
         "step": 1,
+    },
+    "sign_hw": {
+        "workId": None,
+        "fid": None,
+        "title": None,
+        "require": "",
+        "purpose": "",
+
+        "contents": "",
+        "testanswer": "0|0|0",
+        "testinfo": "已掌握技能",
+        "testMark": 100,
+        "testResult": 1,
+        "siteName": "",
+        "siteAddrees": "",
+        "watchTime": "2022-04-08T02:45:24.323Z",
+        "courseID": None,
     },
     "gather": [
         {
